@@ -34,12 +34,10 @@
 /* ? global styles */
 * {
     font-family: 'Open Sans', sans-serif;
-}
-
-body {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -110,4 +108,74 @@ header .navbar {
 .navbar .nav-menu .nav-link:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
+}
+
+/* ? hero section styles */
+.hero-section {
+    background: var(--primary-color);
+    min-height: 100vh;
+}
+
+.hero-section .section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    min-height: 100vh;
+}
+
+.hero-section .hero-text .title {
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: 'Miniver', sans-serif;
+}
+
+.hero-section .hero-text .subtitle {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--white-color);
+    margin-top: 8px;
+    max-width: 70%;
+}
+
+.hero-section .hero-text .description {
+    font-size: var(--font-size-m);
+    color: var(--white-color);
+    margin: 24px 0 40px;
+    max-width: 70%;
+}
+
+.hero-section .hero-text .btns {
+    display: flex;
+    gap: 23px;
+    margin-left: 10px;
+}
+
+.hero-section .hero-text .btn {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--font-weight-medium);
+    transition: .3s ease;
+}
+
+.hero-section .hero-text .learn-more {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.hero-section .hero-text .btn:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-color: transparent;
+    box-shadow: 0 0 22px var(--secondary-color),
+                0 0 44px var(--primary-color);
+}
+
+.hero-section .hero-section-image {
+    max-width: 450px;
+    margin-right: 30px;
 }
