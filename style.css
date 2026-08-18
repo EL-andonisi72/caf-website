@@ -2,6 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* ! roots */
+:root {
+    /* * colors */
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #3d141c;
+    --secondary-color: #f3961c;
+    --light-pink-color: #faf4f5;
+    --medium-gray-color: #ccc;
+    /* * font size */
+    --font-size-s: .9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+}
+
 /* ? global styles */
 * {
     font-family: 'Open Sans', sans-serif;
@@ -11,4 +29,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* ? header styles */
+header {
+
 }
