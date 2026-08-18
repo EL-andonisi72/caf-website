@@ -53,6 +53,7 @@ a {
 span {
     color: var(--white-color);
     transition: .3s ease-in-out;
+    font-family: 'Miniver', cursive;
 }
 
 span:hover {
@@ -103,7 +104,7 @@ header .navbar {
     font-size: var(--font-size-m);
     color: var(--white-color);
     border-radius: var(--border-radius-m);
-    transition: .3s ease-in-out;
+    transition: transform .3s ease-in-out, background .3s ease-in-out, color .3s ease-in-out;
 }
 
 .navbar .nav-menu .nav-link:hover {
