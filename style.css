@@ -110,6 +110,9 @@ header .navbar {
     color: var(--primary-color);
 }
 
+.navbar :where(#menu-cls-btn, #menu-open-btn) {
+    display: none;
+}
 /* ? hero section styles */
 .hero-section {
     background: var(--primary-color);
@@ -190,11 +193,27 @@ header .navbar {
         --font-size-xxl: 1.8rem;
     }
 
+    /* ?styles navbar in media */
+    .navbar :where(#menu-cls-btn, #menu-open-btn) {
+        display: block;
+        font-size: var(--font-size-l);
+    }
+
+    .navbar #menu-cls-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .navbar #menu-open-btn {
+        color: var(--white-color);
+    }
+
     .navbar .nav-menu {
         display: block;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -300px;
         background: var(--white-color);
         display: flex;
         flex-direction: column;
@@ -202,6 +221,22 @@ header .navbar {
         padding-top: 100px;
         width: 300px;
         height: 100%;
+        transition: left .3s ease-in-out;
+    }
+
+    body.menu-open .navbar .nav-menu {
+        left: 0;
+    }
+
+    body.menu-open header::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, .2);
     }
 
     .navbar .nav-menu .nav-link {
@@ -210,4 +245,6 @@ header .navbar {
         display: block;
         margin-top: 17px;
     }
+
+    /* ?styles hero in media */
 }
