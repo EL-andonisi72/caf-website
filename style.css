@@ -184,6 +184,26 @@ header .navbar {
     margin-right: 30px;
 }
 
+/* ?about section styles */
+.about-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.about-section .about-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-section .about-section-image .about-image {
+    width: 400px;
+    height: 400px;
+    border-radius: var(--border-radius-circle);
+    object-fit: cover;
+}
+
 /* TODO: responsive styles */
 @media screen and (max-width: 900px) {
     /* ? root in media */
