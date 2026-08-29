@@ -79,6 +79,7 @@ img {
     padding: 60px 0 100px;
     text-transform: uppercase;
     font-size: var(font-size-xl);
+    color: var(--dark-color);
 }
 
 .section-title::after {
@@ -253,6 +254,13 @@ header .navbar {
 
 .about-section .social-link-list .social-link:hover {
     color: var(--secondary-color);
+}
+
+/* ? menu section styles */
+.menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* TODO: responsive styles */
