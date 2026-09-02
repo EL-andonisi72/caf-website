@@ -79,7 +79,7 @@ img {
     padding: 60px 0 100px;
     text-transform: uppercase;
     font-size: var(font-size-xl);
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 
 .section-title::after {
@@ -256,14 +256,46 @@ header .navbar {
     color: var(--secondary-color);
 }
 
+#about-title {
+    color: var(--dark-color);
+}
+
 /* ? menu section styles */
+.menu-section {
+    color: var(--white-color);
+    background: var(--dark-color);
+}
+
 .menu-section .menu-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 110px;
     align-items: center;
+    justify-content: center;
+}
+
+.menu-section .menu-list .menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
 }
 
 /* TODO: responsive styles */
+/* ! media code for max-width = 900px */
+@media screen and (max-width: 1024px) {
+    .menu-section .menu-list  {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 3 - 60px);
+    }
+}
+
+/* ! media code for max-width = 900px */
 @media screen and (max-width: 900px) {
     /* ? root in media */
     :root {
